@@ -1,0 +1,42 @@
+.img-size {
+  width: 100%;
+  height: 60px;
+  object-fit: cover;
+}
+
+.bg-info{
+  background: linear-gradient(120deg, rgb(34, 40, 40)); 
+}
+
+*{
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:"wdth" 100;
+ 
+}
+.b1{
+  
+  height: 65.5vh;
+}
+.home-h{ 
+  font-weight: 900;
+  color: rgb(0, 173, 181);
+  line-height: 0.8;
+  font-size: 80px;
+ 
+}
+
+body{
+  background-color:black;
+}
+.btn-info{
+  background-color: rgb(0, 173, 181);
+  color:black;
+  border: none;
+}
+.img-f{
+  height: 65.5vh !important;
+  width: 100% !important;
+}
