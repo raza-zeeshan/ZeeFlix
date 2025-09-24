@@ -1,31 +1,29 @@
 export default function About() {
   return (
     <div className="container-fluid my-5">
-      <div className="card bg-black  m-5">
+      <div className="card bg-black text-dark-emphasis  m-5">
         <h1>
           About <strong>ZeeFlix</strong>
         </h1>
         <p>
           About <strong>ZeeFlix®</strong> As the world’s most trusted and
-          recognized source of movie and TV reviews, Rotten Tomatoes and the
-          Tomatometer score have served as the most reliable home of
-          entertainment recommendations for over 25 years. We offer authentic
-          reactions in a broad range of reviews from professional critics and
-          everyday fans alike in addition to helpful, easily digestible
-          what-to-watch roundups. Not only that, but we help build anticipation
-          and provide fans with access to first look entertainment previews,
-          trailers, behind-the-scenes exclusives, and more, as well as original
-          editorial features, fun and informative video series, and even books
-          and games. If you're an entertainment fan looking for a diverse range
-          of perspectives curated in an easy-to-understand format, we'll help
-          you find what you're in the mood for and open your eyes to new things
-          to enjoy
+          recognized source of movie and TV reviews, ZeeFlix and the ZeeMeter
+          score have served as the most reliable home of entertainment
+          recommendations for over 25 years. We offer authentic reactions in a
+          broad range of reviews from professional critics and everyday fans
+          alike in addition to helpful, easily digestible what-to-watch
+          roundups. Not only that, but we help build anticipation and provide
+          fans with access to first look entertainment previews, trailers,
+          behind-the-scenes exclusives, and more, as well as original editorial
+          features, fun and informative video series, and even books and games.
+          If you're an entertainment fan looking for a diverse range of
+          perspectives curated in an easy-to-understand format, we'll help you
+          find what you're in the mood for and open your eyes to new things to
+          enjoy
         </p>
-        <h2>
-          What is the Zee<em>Meter</em> ?
-        </h2>
+        <h2>What is the ZeeMeter ?</h2>
         <p>
-          The Zee<em>Meter</em>, which captures audience sentiment, is
+          The <strong>ZeeMeter</strong>, which captures audience sentiment, is
           represented by a popcorn bucket and indicates the percentage of fans
           who have rated a movie or TV show positively. When we can verify users
           have bought a ticket to a film, the default score shown is composed of
