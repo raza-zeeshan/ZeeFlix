@@ -40,3 +40,18 @@ body{
   height: 65.5vh !important;
   width: 100% !important;
 }
+
+
+.footer {
+  background-color: rgb(57, 62, 70);
+  height: 78px;
+  width: 100%;
+}
+
+.text-col{
+  color: white;
+  font-size: 20px;
+}
+.text-col:hover{
+  color: rgb(0, 173, 181);
+}
