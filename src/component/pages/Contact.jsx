@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
+
 export default function Contact() {
   return (
     <>
@@ -12,6 +15,22 @@ export default function Contact() {
                 If you have any questions or feedback, feel free to reach out to
                 us!
               </p>
+              <p>Email: contact@zeeflix.com</p>
+              <p>Phone: +1 (123) 456-7890</p>
+              <p>Address: 123 Movie Lane, Filmtown, CA 90210</p>
+
+              <p>We look forward to hearing from you!</p>
+              <h2>Get in Touch</h2>
+              <p>You can also follow us :</p>
+              <Link to="/" className="links">
+                <FaLinkedin className="me-3" />
+              </Link>
+              <Link to="/" className="links">
+                <FaInstagram className="me-3" />
+              </Link>
+              <Link to="/" className="links">
+                <FaGithub className="me-3" />
+              </Link>
             </div>
 
             <div className="col-6 my-5">

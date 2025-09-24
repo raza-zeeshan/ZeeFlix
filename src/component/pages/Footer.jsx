@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-
+import { FaGithub, FaInstagram, FaLink, FaLinkedin } from "react-icons/fa";
 export default function Footer() {
   return (
     <footer className="footer container-fluid">
@@ -8,23 +8,24 @@ export default function Footer() {
           <Link
             to="https://www.linkedin.com/in/zeeshanraza01"
             target="_blank"
-            className="text-col  me-4"
+            className="text-col"
           >
-            LinkedIn
+            {" "}
+            <FaLinkedin className="me-3" />
           </Link>
           <Link
             to="https://leetcode.com/Zeeshan_Raza_44/"
-            className="text-col  me-4"
+            className="text-col"
             target="_blank"
           >
-            LeetCode
+            <FaInstagram className="me-3" />
           </Link>
           <Link
             to="https://github.com/raza-zeeshan"
             target="_blank"
             className="text-col "
           >
-            Github
+            <FaGithub className="me-3" />
           </Link>
         </div>
         <div className="col-6 text-white">

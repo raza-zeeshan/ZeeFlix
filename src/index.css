@@ -64,3 +64,11 @@ h2{
   font-weight: 400;
   color: rgb(0, 173, 181);
 }
+.links{
+  color: white;
+  font-size: 30px;
+}
+.links:hover{
+  color: rgb(0, 173, 181);
+  /* font-size: 35px;; */
+}
