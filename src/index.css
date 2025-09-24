@@ -55,3 +55,10 @@ body{
 .text-col:hover{
   color: rgb(0, 173, 181);
 }
+strong{
+  color: rgb(0, 173, 181);
+}
+h2{
+  font-weight: 400;
+  color: rgb(0, 173, 181);
+}
