@@ -10,12 +10,17 @@ export default function MoviesList() {
   }, []);
 
   async function fetchMovies() {
-    const response = await axios.get(
-      "http://www.omdbapi.com/?i=tt3896198&apikey=2adcf282"
-    );
-    const data = response.data;
-    setMovies(data);
-    console.log(data);
+    try {
+      const response = await axios.get(
+        "http://www.omdbapi.com/?s=batman&apikey=2adcf282"
+      );
+      const data = response.data;
+      setMovies(data.Search);
+      console.log(data);
+    } catch (error) {
+      console.error("Error fetching movies:", error);
+    }
+    console.log(movies);
   }
 
   return (
@@ -23,7 +28,7 @@ export default function MoviesList() {
       <div className="container-fluid">
         <div className="row">
           {movies.map((movie) => (
-            <div className="col-4 text-center my-5" key={movie.imdbID}>
+            <div className="col-3 text-center my-5" key={movie.imdbID}>
               <Card movie={movie} />
             </div>
           ))}
