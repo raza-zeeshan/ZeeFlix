@@ -5,6 +5,7 @@ export default function Footer() {
     <footer className="footer container-fluid">
       <div className="row p-4 text-center">
         <div className="col-6">
+          <strong>Follow Us On : </strong>
           <Link
             to="https://www.linkedin.com/in/zeeshanraza01"
             target="_blank"
@@ -29,7 +30,7 @@ export default function Footer() {
           </Link>
         </div>
         <div className="col-6 text-white">
-          &copy;
+          copyright &copy;
           {new Date().getFullYear()} All rights reserved
         </div>
       </div>

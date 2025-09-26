@@ -22,13 +22,25 @@ export default function Contact() {
               <p>We look forward to hearing from you!</p>
               <h2>Get in Touch</h2>
               <p>You can also follow us :</p>
-              <Link to="/" className="links">
+              <Link
+                to="https://www.linkedin.com/in/zeeshanraza01"
+                target="_blank"
+                className="links"
+              >
                 <FaLinkedin className="me-3" />
               </Link>
-              <Link to="/" className="links">
+              <Link
+                to="https://leetcode.com/Zeeshan_Raza_44/"
+                target="_blank"
+                className="links"
+              >
                 <FaInstagram className="me-3" />
               </Link>
-              <Link to="/" className="links">
+              <Link
+                to="https://github.com/raza-zeeshan"
+                target="_blank"
+                className="links"
+              >
                 <FaGithub className="me-3" />
               </Link>
             </div>
