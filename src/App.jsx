@@ -4,6 +4,7 @@ import About from "./component/pages/About";
 import Contact from "./component/pages/Contact";
 import Navbar from "./component/pages/Navbar";
 import Footer from "./component/pages/Footer";
+import ErrorPage from "./component/pages/ErrorPage";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<ErrorPage />} />
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -72,3 +72,8 @@ h2{
   color: rgb(0, 173, 181);
   /* font-size: 35px;; */
 }
+
+.active{
+  
+  font-size: 110%;
+}
