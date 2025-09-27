@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 export default function MovieDetails() {
   const [movie, setMovie] = useState(null);
@@ -10,7 +11,7 @@ export default function MovieDetails() {
 
   useEffect(() => {
     fetchMovieDetails();
-  }, [id]);
+  }, []);
 
   async function fetchMovieDetails() {
     try {
@@ -47,47 +48,57 @@ export default function MovieDetails() {
           <div className="col-10  m-auto ">
             <div className="card my-5 bg-dark text-white">
               <div
-                className="card-body"
+                className="card-body "
                 style={{
                   boxShadow: "0px 0px 20px 10px rgba(21, 158, 231, 0.25)",
                 }}
               >
-                <div className="row">
-                  <div className="col-4">
+                <div className="row ">
+                  <div className="col-4 text-center">
                     <img
                       src={Poster}
                       alt={Title}
-                      className="img-fluid rounded"
+                      className="img-fluid rounded my-4"
+                      style={{
+                        boxShadow: "0px 0px 20px 10px rgba(21, 158, 231, 0.25)",
+                      }}
                     />
                   </div>
-                  <div className="col-8">
-                    <div className="bg-black p-1 rounded text-center ">
+                  <div className="col-8 bg-black rounded ">
+                    <div className="m-4 rounded text-center ">
                       <h2>{Title}</h2>
                     </div>
-                    <p className="mt-3">
-                      <strong>Plot :</strong> {Plot}
-                    </p>
-                    <p className="mt-3">
-                      <strong>Released Year:</strong> {Year}
-                    </p>
-                    <p className="mt-3">
-                      <strong>Type:</strong> {Type}
-                    </p>
-                    <p className="mt-3">
-                      <strong>Genre:</strong> {Genre}
-                    </p>
-                    <p className="mt-3">
-                      <strong>Director:</strong> {Director}
-                    </p>
-                    <p className="mt-3">
-                      <strong>Runtime:</strong> {Runtime}
-                    </p>
-                    <p className="mt-3">
-                      <strong>Casts:</strong> {Actors}
-                    </p>
-                    <p className="mt-3">
-                      <strong>IMDB Rating:</strong> {imdbRating}
-                    </p>
+                    <div className="mx-3">
+                      <p className="mt-3">
+                        <strong>Plot :</strong> {Plot}
+                      </p>
+                      <p className="mt-3">
+                        <strong>Released Year:</strong> {Year}
+                      </p>
+                      <p className="mt-3">
+                        <strong>Type:</strong> {Type}
+                      </p>
+                      <p className="mt-3">
+                        <strong>Genre:</strong> {Genre}
+                      </p>
+                      <p className="mt-3">
+                        <strong>Director:</strong> {Director}
+                      </p>
+                      <p className="mt-3">
+                        <strong>Runtime:</strong> {Runtime}
+                      </p>
+                      <p className="mt-3">
+                        <strong>Casts:</strong> {Actors}
+                      </p>
+                      <p className="mt-3">
+                        <strong>IMDB Rating:</strong> {imdbRating}
+                      </p>
+                      <div className="text-center my-2">
+                        <Link to="/movies" className="btn btn-info">
+                          Back to Movies
+                        </Link>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

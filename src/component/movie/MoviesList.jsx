@@ -13,7 +13,7 @@ export default function MoviesList() {
   async function fetchMovies() {
     try {
       const response = await axios.get(
-        "http://www.omdbapi.com/?s=batman&apikey=2adcf282"
+        "http://www.omdbapi.com/?s=superman&apikey=2adcf282"
       );
       const data = response.data;
       setMovies(data.Search);
