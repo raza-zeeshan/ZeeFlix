@@ -2,7 +2,7 @@
 import { NavLink } from "react-router-dom";
 export default function ErrorPage() {
   return (
-    <div className="container-fluid text-center my-37`">
+    <div className="container-fluid text-center my-2">
       <figure className="">
         <img
           src="https://cdn.dribbble.com/users/722246/screenshots/3066818/404-page.gif"

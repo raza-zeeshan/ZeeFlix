@@ -6,6 +6,7 @@ import Navbar from "./component/pages/Navbar";
 import Footer from "./component/pages/Footer";
 import ErrorPage from "./component/pages/ErrorPage";
 import MoviesList from "./component/movie/MoviesList";
+import MovieDetails from "./component/movie/MovieDetails";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/movies" element={<MoviesList />} />
+          <Route path="/movies/:id" element={<MovieDetails />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
         <Footer />

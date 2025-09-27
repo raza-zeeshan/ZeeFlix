@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Card from "./Card";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 export default function MoviesList() {
   const [movies, setMovies] = useState([]);
@@ -22,14 +23,18 @@ export default function MoviesList() {
     }
     console.log(movies);
   }
-
+  if (movies.length === 0) {
+    return <h2 className="text-center text-info my-5">Loading...</h2>;
+  }
   return (
     <>
       <div className="container-fluid">
         <div className="row">
           {movies.map((movie) => (
-            <div className="col-3 text-center my-5" key={movie.imdbID}>
-              <Card movie={movie} />
+            <div className="col-3 text-center mt-4" key={movie.imdbID}>
+              <Link to={`/movies/${movie.imdbID}`}>
+                <Card movie={movie} />
+              </Link>
             </div>
           ))}
         </div>
