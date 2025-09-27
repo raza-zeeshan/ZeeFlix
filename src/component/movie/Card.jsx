@@ -1,8 +1,8 @@
 export default function Card({ movie }) {
   const { Title, Poster } = movie;
   return (
-    <div className="card bg-black text-white">
-      <div className="card-header">
+    <div className="card bg-dark text-white">
+      <div className="card-header mt-3">
         <img
           src={Poster}
           alt={Title}
@@ -16,7 +16,7 @@ export default function Card({ movie }) {
         <h5 className="card-title">
           <strong>{Title}</strong>
         </h5>
-        <p className="card-text">{""}</p>
+        {/* <p className="card-text">{""}</p> */}
       </div>
     </div>
   );

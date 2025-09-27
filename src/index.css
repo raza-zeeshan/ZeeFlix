@@ -79,3 +79,47 @@ h2{
 .active{ 
   font-size: 110%;
 }
+
+
+
+.shimmer-card {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: #1e1e1e;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.shimmer-img,
+.shimmer-text {
+  background: linear-gradient(
+    to right,
+    #2a2a2a 0%,
+    #3a3a3a 20%,
+    #2a2a2a 40%,
+    #2a2a2a 100%
+  );
+  background-size: 800px 104px;
+  animation: shimmer 1.5s infinite linear;
+  border-radius: 4px;
+}
+
+.shimmer-img {
+  height: 100vh;
+}
+
+.shimmer-text {
+  height: 30vh;
+  margin-top: 10px;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -800px 0;
+  }
+  100% {
+    background-position: 800px 0;
+  }
+}
