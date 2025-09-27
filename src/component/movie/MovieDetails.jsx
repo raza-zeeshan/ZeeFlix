@@ -24,7 +24,18 @@ export default function MovieDetails() {
       console.error("Error fetching movie details:", error);
     }
   }
-  const { Title, Year, Genre, Director, Plot, Poster } = movie || {};
+  const {
+    Title,
+    Year,
+    Genre,
+    Director,
+    Plot,
+    Poster,
+    Runtime,
+    Actors,
+    Type,
+    imdbRating,
+  } = movie || {};
   if (!movie) {
     return <h2 className="text-center text-info my-5">Loading...</h2>;
   }
@@ -33,14 +44,52 @@ export default function MovieDetails() {
     <>
       <div className="container-fluid">
         <div className="row">
-          <div className="col-10 text-center m-auto my-5">
-            <div className="card">
-              <div className="card-header">
-                <h2 className="text-info">{Title}</h2>
-              </div>
-              <div className="card-body">
-                <img src={Poster} alt={Title} className="img-fluid" />
-                <p className="mt-3">{Plot}</p>
+          <div className="col-10  m-auto ">
+            <div className="card my-5 bg-dark text-white">
+              <div
+                className="card-body"
+                style={{
+                  boxShadow: "0px 0px 20px 10px rgba(21, 158, 231, 0.25)",
+                }}
+              >
+                <div className="row">
+                  <div className="col-4">
+                    <img
+                      src={Poster}
+                      alt={Title}
+                      className="img-fluid rounded"
+                    />
+                  </div>
+                  <div className="col-8">
+                    <div className="bg-black p-1 rounded text-center ">
+                      <h2>{Title}</h2>
+                    </div>
+                    <p className="mt-3">
+                      <strong>Plot :</strong> {Plot}
+                    </p>
+                    <p className="mt-3">
+                      <strong>Released Year:</strong> {Year}
+                    </p>
+                    <p className="mt-3">
+                      <strong>Type:</strong> {Type}
+                    </p>
+                    <p className="mt-3">
+                      <strong>Genre:</strong> {Genre}
+                    </p>
+                    <p className="mt-3">
+                      <strong>Director:</strong> {Director}
+                    </p>
+                    <p className="mt-3">
+                      <strong>Runtime:</strong> {Runtime}
+                    </p>
+                    <p className="mt-3">
+                      <strong>Casts:</strong> {Actors}
+                    </p>
+                    <p className="mt-3">
+                      <strong>IMDB Rating:</strong> {imdbRating}
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

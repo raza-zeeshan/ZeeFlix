@@ -6,10 +6,9 @@ export default function Card({ movie }) {
         <img
           src={Poster}
           alt={Title}
-          className="img-fluid"
+          className="img-fluid rounded-2"
           style={{
-            borderRadius: "10px",
-            boxShadow: "0px 0px 10px 10px rgba(21, 157, 231, 0.2)",
+            boxShadow: "0px 0px 20px 10px rgba(21, 158, 231, 0.25)",
           }}
         />
       </div>
