@@ -23,7 +23,9 @@ export default function MoviesList() {
     setLoading(true);
     try {
       const response = await axios.get(
-        `http://www.omdbapi.com/?s=${search}&apikey=${process.env.REACT_APP_API_KEY}`
+        `http://www.omdbapi.com/?s=${search}&apikey=${
+          import.meta.env.VITE_API_KEY
+        }`
       );
       const data = response.data;
 
@@ -54,7 +56,9 @@ export default function MoviesList() {
         <hr className="bg-white" />
         <br />
         {search.length === 0 && (
-          <h3 className="text-danger">Please enter Movie Name.</h3>
+          <h3 className="text-danger text-center my-5">
+            Please enter Movie Name.
+          </h3>
         )}
 
         <div className="row">
