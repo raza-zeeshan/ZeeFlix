@@ -6,8 +6,8 @@ export default function Search({ setSearch, search, fetchMovies }) {
           <input
             type="text"
             className="form-control mt-2"
-            placeholder="Search movies..."
-            aria-label="Search movies..."
+            placeholder="Search movies [min 3 characters]"
+            aria-label="Search movies"
             aria-describedby="button-addon2"
             value={search}
             onChange={(e) => setSearch(e.target.value)}

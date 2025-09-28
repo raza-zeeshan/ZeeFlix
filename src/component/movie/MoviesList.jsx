@@ -10,7 +10,7 @@ export default function MoviesList() {
   const [movies, setMovies] = useState([]);
   const [loading, setLoading] = useState(true);
   const [isError, setIsError] = useState("");
-  const [search, setSearch] = useState("Batman");
+  const [search, setSearch] = useState("man");
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -23,7 +23,7 @@ export default function MoviesList() {
     setLoading(true);
     try {
       const response = await axios.get(
-        `http://www.omdbapi.com/?s=${search}&apikey=2adcf282`
+        `http://www.omdbapi.com/?s=${search}&apikey=${process.env.REACT_APP_API_KEY}`
       );
       const data = response.data;
 
@@ -31,12 +31,12 @@ export default function MoviesList() {
         setMovies(data.Search);
         setIsError("");
       } else {
-        setMovies([]); // Ensure movies is always an array
+        setMovies([]);
         setIsError(data.Error || "No movies found.");
       }
     } catch (error) {
       console.error("Error fetching movies:", error);
-      setMovies([]); // Prevent undefined
+      setMovies([]);
       setIsError("Failed to fetch movies. Please try again later.");
     } finally {
       setLoading(false);
@@ -54,15 +54,13 @@ export default function MoviesList() {
         <hr className="bg-white" />
         <br />
         {search.length === 0 && (
-          <h3 className="text-danger">Please enter a search term.</h3>
+          <h3 className="text-danger">Please enter Movie Name.</h3>
         )}
-        {search && (
-          <h3 className="text-white">Showing results for "{search}"</h3>
-        )}
+
         <div className="row">
           {loading && <Shimmer />}
           {!loading && isError && (
-            <div className="col-10 m-auto text-center">
+            <div className="col-10 m-auto my-5 text-center">
               <h2 className="text-danger my-5">{isError}</h2>
             </div>
           )}
@@ -78,8 +76,6 @@ export default function MoviesList() {
                 </Link>
               </div>
             ))}
-
-          {isError && <ErrorList isError={isError} />}
         </div>
       </div>
     </>
