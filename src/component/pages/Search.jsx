@@ -1,4 +1,4 @@
-export default function Search({ setSearch, search, fetchMovies }) {
+export default function Search({ setSearch, search }) {
   return (
     <>
       <div className="row my-3">
@@ -8,18 +8,18 @@ export default function Search({ setSearch, search, fetchMovies }) {
             className="form-control mt-2"
             placeholder="Search movies [min 3 characters]"
             aria-label="Search movies"
-            aria-describedby="button-addon2"
+            // aria-describedby="button-addon2"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
           />
-          <button
+          {/* <button
             className="btn btn-md btn-cyan"
             type="submit"
             id="button-addon2"
             onClick={fetchMovies}
           >
             Search
-          </button>
+          </button> */}
         </div>
       </div>
     </>

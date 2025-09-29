@@ -18,7 +18,9 @@ export default function MovieDetails() {
   async function fetchMovieDetails() {
     try {
       const response = await axios.get(
-        `http://www.omdbapi.com/?i=${id}&apikey=2adcf282`
+        `${import.meta.env.VITE_API_URL}?i=${id}&apikey=${
+          import.meta.env.VITE_API_KEY
+        }`
       );
       const data = response.data;
       setMovie(data);
@@ -70,7 +72,7 @@ export default function MovieDetails() {
                     </div>
                     <div className="col-8 bg-black rounded ">
                       <div className="m-4 rounded text-center ">
-                        <h2>{Title}</h2>
+                        <h2 className=" fw-bold">{Title}</h2>
                       </div>
                       <div className="mx-3">
                         <p className="mt-3">

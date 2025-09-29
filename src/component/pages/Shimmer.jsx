@@ -1,23 +1,19 @@
 import React from "react";
-// import "./Shimmer.css"; // Make sure this CSS file exists
+// import "./Shimmer.css"; // Make sure this CSS file contains the shimmer styles
 
 export default function Shimmer() {
-  const placeholders = Array.from({ length: 12 });
+  const shimmerItems = Array(8).fill(0); // Simulate 8 loading cards
 
   return (
-    <>
-      <section className="container-fluid">
-        <div className="row">
-          {placeholders.map((_, index) => (
-            <div className="col-3 text-center mt-4" key={index}>
-              <div className="card shimmer-card">
-                <div className="card-header shimmer-img"></div>
-                <div className="card-body shimmer-text"></div>
-              </div>
-            </div>
-          ))}
+    <div className="row">
+      {shimmerItems.map((_, index) => (
+        <div className="col-3 text-center my-4" key={index}>
+          <div className="shimmer-card">
+            <div className="shimmer-img  m-auto img-fluid " />
+            <div className="shimmer-text" />
+          </div>
         </div>
-      </section>
-    </>
+      ))}
+    </div>
   );
 }

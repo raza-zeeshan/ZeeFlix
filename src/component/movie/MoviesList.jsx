@@ -10,7 +10,7 @@ export default function MoviesList() {
   const [movies, setMovies] = useState([]);
   const [loading, setLoading] = useState(true);
   const [isError, setIsError] = useState("");
-  const [search, setSearch] = useState("man");
+  const [search, setSearch] = useState(`${import.meta.env.VITE_QUERY}`);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -23,7 +23,7 @@ export default function MoviesList() {
     setLoading(true);
     try {
       const response = await axios.get(
-        `http://www.omdbapi.com/?s=${search}&apikey=${
+        `${import.meta.env.VITE_API_URL}?s=${search}&apikey=${
           import.meta.env.VITE_API_KEY
         }`
       );
@@ -56,7 +56,7 @@ export default function MoviesList() {
         <hr className="bg-white" />
         <br />
         {search.length === 0 && (
-          <h3 className="text-danger text-center my-5">
+          <h3 className="text-danger text-center mt-5">
             Please enter Movie Name.
           </h3>
         )}
@@ -65,7 +65,7 @@ export default function MoviesList() {
           {loading && <Shimmer />}
           {!loading && isError && (
             <div className="col-10 m-auto my-5 text-center">
-              <h2 className="text-danger my-5">{isError}</h2>
+              <ErrorList isError={isError} />
             </div>
           )}
           {!loading &&
