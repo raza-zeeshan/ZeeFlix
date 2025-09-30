@@ -36,6 +36,13 @@ ZeeFlix is a modern React-based web application for exploring movies, series, an
 
 > Add screenshots of your app here (e.g., Home page, Movie details, Search results).
 
+```
+
+
+![Home Page Screenshot](./public/home.png)
+![Movies Page Screenshot](./public/movies.png)
+```
+
 ---
 
 ## Getting Started
@@ -140,7 +147,7 @@ zee-flix/
 
 ## Tech Stack
 
-- **Frontend:** React, React Router, Bootstrap, MDBootstrap, FontAwesome, React Icons
+- **Frontend:** HTML, CSS,JavaScript, React, React Router, Bootstrap, MDBootstrap, FontAwesome, React Icons, Axios
 - **API:** [OMDb API](https://www.omdbapi.com/)
 - **Tooling:** Vite, ESLint
 
