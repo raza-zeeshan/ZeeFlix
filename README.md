@@ -95,41 +95,36 @@ ZeeFlix is a modern React-based web application for exploring movies, series, an
 ## Project Structure
 
 ```
-.env
-.gitignore
-eslint.config.js
-index.html
-package.json
-README.md
-vercel.json
-vite.config.js
-public/
-  zee-flix-high-resolution-logo.png
-src/
-  App.css
-  App.jsx
-  index.css
-  main.jsx
-  assets/
-    logo.png
-    movie.png
-    react.svg
-  component/
-    movie/
-      Card.jsx
-      MovieDetails.jsx
-      MoviesList.jsx
-    pages/
-      About.jsx
-      Contact.jsx
-      ErrorList.jsx
-      ErrorPage.jsx
-      Footer.jsx
-      Home.jsx
-      MovieShimmer.jsx
-      Navbar.jsx
-      Search.jsx
-      Shimmer.jsx
+zee-flix/
+├── public/
+│   └── zee-flix-high-resolution-logo.png
+├── src/
+│   ├── assets/
+│   ├── component/
+│   │   ├── movie/
+│   │   │   ├── [Card.jsx](http://_vscodecontentref_/0)
+│   │   │   ├── [MovieDetails.jsx](http://_vscodecontentref_/1)
+│   │   │   └── [MoviesList.jsx](http://_vscodecontentref_/2)
+│   │   └── pages/
+│   │       ├── [About.jsx](http://_vscodecontentref_/3)
+│   │       ├── [Contact.jsx](http://_vscodecontentref_/4)
+│   │       ├── [ErrorList.jsx](http://_vscodecontentref_/5)
+│   │       ├── [ErrorPage.jsx](http://_vscodecontentref_/6)
+│   │       ├── [Footer.jsx](http://_vscodecontentref_/7)
+│   │       ├── [Home.jsx](http://_vscodecontentref_/8)
+│   │       ├── [MovieShimmer.jsx](http://_vscodecontentref_/9)
+│   │       ├── [Navbar.jsx](http://_vscodecontentref_/10)
+│   │       ├── [Search.jsx](http://_vscodecontentref_/11)
+│   │       └── [Shimmer.jsx](http://_vscodecontentref_/12)
+│   ├── [App.jsx](http://_vscodecontentref_/13)
+│   ├── [App.css](http://_vscodecontentref_/14)
+│   ├── [index.css](http://_vscodecontentref_/15)
+│   └── [main.jsx](http://_vscodecontentref_/16)
+├── .env
+├── [package.json](http://_vscodecontentref_/17)
+├── [vite.config.js](http://_vscodecontentref_/18)
+├── [vercel.json](http://_vscodecontentref_/19)
+└── [README.md](http://_vscodecontentref_/20)
 ```
 
 ---
