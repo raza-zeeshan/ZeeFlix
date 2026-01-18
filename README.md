@@ -208,7 +208,7 @@ This project is licensed under the [MIT License](LICENSE).
 - **Author:** Zeeshan Raza
 - **LinkedIn:** [zeeshanraza01](https://www.linkedin.com/in/zeeshanraza01)
 - **GitHub:** [raza-zeeshan](https://github.com/raza-zeeshan)
-- **Email:** contact@zeeflix.com
+- **Email:** zeeshanraza0201@gmail.com
 
 ---
 
