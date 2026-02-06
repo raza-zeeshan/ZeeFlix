@@ -209,7 +209,7 @@ This project is licensed under the [MIT License](LICENSE).
 - **LinkedIn:** [zeeshanraza01](https://www.linkedin.com/in/zeeshanraza01)
 - **GitHub:** [raza-zeeshan](https://github.com/raza-zeeshan)
 - **LeetCode:**[Zeeshan_Raza_44](https://leetcode.com/u/Zeeshan_Raza_44/)
-- **Email:** zeeshanraza0201@gmail.com
+- **Email:** [zeeshanraza0201@gmail.com](zeeshanraza0201@gmail.com)
 
 ---
 
