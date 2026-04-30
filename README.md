@@ -4,7 +4,9 @@ ZeeFlix is a modern React-based web application for exploring movies, series, an
 
 ---
 
+
 ## Table of Contents
+
 
 - [Features](#features)
 - [Screenshots](#screenshots)
