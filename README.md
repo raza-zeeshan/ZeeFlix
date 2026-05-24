@@ -88,7 +88,6 @@ ZeeFlix is a modern React-based web application for exploring movies, series, an
 ---
 
 ## Project Structure
-
 ```
 zee-flix/
 ├── public/
@@ -121,7 +120,6 @@ zee-flix/
 ├── [vercel.json](http://_vscodecontentref_/19)
 └── [README.md](http://_vscodecontentref_/20)
 ```
-
 ---
 
 ## Scripts
