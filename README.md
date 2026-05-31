@@ -50,13 +50,11 @@ ZeeFlix is a modern React-based web application for exploring movies, series, an
    ```
 
 2. **Install dependencies:**
-
    ```sh
    npm install
    # or
    yarn install
    ```
-
 3. **Set up environment variables:**
 
    Create a `.env` file in the root directory and add your OMDb API credentials:
