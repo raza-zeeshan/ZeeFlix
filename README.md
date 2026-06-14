@@ -65,7 +65,9 @@ ZeeFlix is a modern React-based web application for exploring movies, series, an
    VITE_QUERY=batman
    ```
 
+
 4. **Run the development server:**
+
 
    ```sh
    npm run dev
