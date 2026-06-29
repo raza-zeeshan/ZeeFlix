@@ -35,7 +35,6 @@ ZeeFlix is a modern React-based web application for exploring movies, series, an
 ---
 ## Getting Started
 
-
 ### Prerequisites
 
 - [Node.js](https://nodejs.org/) (v18+ recommended)
