@@ -55,9 +55,11 @@ ZeeFlix is a modern React-based web application for exploring movies, series, an
    # or
    yarn install
    ```
+   
 3. **Set up environment variables:**
 
    Create a `.env` file in the root directory and add your OMDb API credentials:
+
 
    ```
    VITE_API_URL=https://www.omdbapi.com/
