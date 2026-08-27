@@ -176,6 +176,7 @@ zee-flix/
 
 ---
 
+
 ## Deployment
 
 - The project is ready for deployment on [Vercel](https://vercel.com/) using [`vercel.json`](vercel.json).
